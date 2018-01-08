@@ -1,42 +1,37 @@
-GIT
-  remote: git@github.com:sinatra/sinatra-contrib.git
-  revision: e80c8635c7350f9c200e718a536b2a11b6cc5afe
-  specs:
-    sinatra-contrib (1.4.2)
-      backports (>= 2.0)
-      multi_json
-      rack-protection
-      rack-test
-      sinatra (~> 1.4.0)
-      tilt (~> 1.3)
-
-GIT
-  remote: git@github.com:sinatra/sinatra.git
-  revision: 0a0957aefa86dc2ab7f0698f2c1ca2df8e33b511
-  specs:
-    sinatra (1.4.6)
-      rack (~> 1.4)
-      rack-protection (~> 1.4)
-      tilt (>= 1.3, < 3)
-
 GEM
   remote: https://rubygems.org/
   specs:
-    backports (3.6.4)
-    haml (4.0.6)
+    backports (3.11.0)
+    haml (5.0.4)
+      temple (>= 0.8.0)
       tilt
-    multi_json (1.11.0)
-    rack (1.6.0)
-    rack-protection (1.5.3)
+    multi_json (1.12.2)
+    mustermann (1.0.1)
+    rack (2.0.3)
+    rack-protection (2.0.0)
       rack
-    rack-test (0.6.3)
-      rack (>= 1.0)
-    tilt (1.4.1)
+    sinatra (2.0.0)
+      mustermann (~> 1.0)
+      rack (~> 2.0)
+      rack-protection (= 2.0.0)
+      tilt (~> 2.0)
+    sinatra-contrib (2.0.0)
+      backports (>= 2.0)
+      multi_json
+      mustermann (~> 1.0)
+      rack-protection (= 2.0.0)
+      sinatra (= 2.0.0)
+      tilt (>= 1.3, < 3)
+    temple (0.8.0)
+    tilt (2.0.8)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
   haml
-  sinatra!
-  sinatra-contrib!
+  sinatra
+  sinatra-contrib
+
+BUNDLED WITH
+   1.16.1
